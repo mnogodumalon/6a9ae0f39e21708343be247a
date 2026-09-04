@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Gäste": {
+      "placeholders_set": 9,
+      "defaults_keys": ["newsletter"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Name, Kontakt, Adresse). Keine Zahlenwerte oder berechenbaren Beziehungen. Newsletter als Optional-Flag mit Default=false."
+    },
+    "Zimmer": {
+      "placeholders_set": 5,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Stammdaten für Unterkunftskategorien (Bezeichnung, Kategorie, Preis, Etage, Balkon). Preis pro Nacht ist ein Tarif, wird später in Buchungen applookup'd, nicht selbst berechenbar."
+    },
+    "Zusatzleistungen": {
+      "placeholders_set": 3,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Preiskatalog für optionale Leistungen (Name, Preis, Aktiv). Reine Tarife ohne Mengen oder Kettenglieder. Aktiv als Feature-Flag mit Default=true."
+    },
+    "Buchungen": {
+      "placeholders_set": 9,
+      "defaults_keys": ["anreise", "abreise", "status", "personen"],
+      "computed_keys": ["_buchung_dauer_nächte", "gesamtkosten"],
+      "reason": "Zentrale Aufenthalts-Entity. Datumpaar (Anreise+Abreise) mit applookup auf Zimmer (preis_pro_nacht) + multipleapplookup auf Zusatzleistungen (preis). MODUS-2 computed gesamtkosten summiert Zimmer-Tage + Zusatzleistungen. Virtueller Dauer-Key für Dialog-Übersicht."
+    },
+    "Rechnungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["rechnungsdatum", "faellig_am", "zahlungsstatus"],
+      "computed_keys": [],
+      "reason": "Rechnungs-Erfassungsformular mit Betrag-Feld (manuell eingegeben, nicht berechenbar — kein Zugriff auf Buchungs-Details im Dialog-Kontext). Applookup auf Buchung ist Kontext-Link, nicht Berechnung-Quelle."
+    }
+  }
+}
