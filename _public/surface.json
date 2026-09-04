@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "buchungsanfrage",
+      "component": "Buchungsanfrage",
+      "title": "Zimmer anfragen",
+      "endpoints": [
+        {
+          "entity": "gaeste",
+          "op": "create",
+          "fields": [
+            "vorname",
+            "nachname",
+            "email",
+            "telefon"
+          ]
+        },
+        {
+          "entity": "buchungen",
+          "op": "create",
+          "fields": [
+            "gast",
+            "zimmer",
+            "anreise",
+            "abreise",
+            "bemerkung"
+          ],
+          "preset_fields": {
+            "status": "angefragt"
+          }
+        }
+      ]
+    }
+  ]
+}
