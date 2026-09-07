@@ -20,6 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
+import { IconCalendarPlus, IconDoorEnter, IconFileInvoice } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -42,6 +43,9 @@ export interface IntentLink {
 
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
+  { path: '/intents/neue-buchung', label: { de: 'Neue Buchung', en: 'New booking' }, icon: IconCalendarPlus, description: 'Buchung anlegen: Gast suchen oder neu anlegen, freies Zimmer wählen, Zusatzleistungen' },
+  { path: '/intents/gast-einchecken', label: { de: 'Gast einchecken', en: 'Check in guest' }, icon: IconDoorEnter, description: 'Buchung suchen und Gast einchecken — Status auf eingecheckt setzen' },
+  { path: '/intents/rechnung-erstellen', label: { de: 'Rechnung stellen', en: 'Create invoice' }, icon: IconFileInvoice, description: 'Rechnung zu einer abgeschlossenen Buchung anlegen' },
   // </custom:intents>
 ];
 
@@ -52,7 +56,7 @@ export const INTENTS: IntentLink[] = [
  * purpose — a scaffold update resets it to false (self-healing if Phase 2
  * never ran).
  */
-export const INTENTS_PENDING = true;
+export const INTENTS_PENDING = false;
 
 /**
  * When the Phase-1 bundle was deployed (ISO, set by the service together with
