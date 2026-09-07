@@ -1,0 +1,40 @@
+{
+  "pages": {
+    "en": {
+      " reist ab": " departing",
+      " reist an": " arriving",
+      "Abreise": "Departure",
+      "Abreisen heute": "Departures Today",
+      "Anreisen heute": "Arrivals Today",
+      "Aufenthalt angepasst": "Stay adjusted",
+      "Auschecken": "Check Out",
+      "Ausgecheckt": "Checked Out",
+      "Auslastung": "Occupancy",
+      "Belegt heute": "Occupied Today",
+      "Bestätigt": "Confirmed",
+      "Buchung": "Booking",
+      "Buchung verschoben": "Booking rescheduled",
+      "Einchecken": "Check In",
+      "Eingecheckt": "Checked In",
+      "Erstes Zimmer anlegen": "Create First Room",
+      "Füge zuerst die Zimmer der Pension hinzu.": "Add the rooms of the Pension first.",
+      "Gast": "Guest",
+      "Heute": "Today",
+      "Heute keine An- oder Abreisen": "No arrivals or departures today",
+      "Heute keine An- oder Abreisen geplant.": "No arrivals or departures scheduled today.",
+      "Keine offenen Rechnungen": "No open invoices",
+      "Neue Buchung": "New Booking",
+      "Offene Rechnungen": "Open Invoices",
+      "Pension einrichten": "Set up Pension",
+      "Rechnung erstellen": "Create Invoice",
+      "Unbekannter Gast": "Unknown Guest",
+      "Willkommen in der Pension — richte zuerst die Zimmer ein.": "Welcome to the Pension — set up your rooms first.",
+      "Zimmer belegt ({0})": "Room occupied ({0})",
+      "eine andere Buchung": "another booking",
+      "fällig": "due",
+      "{0} Gäste reisen heute ab — Checkout ausstehend.": "{0} guests are checking out today — checkout pending.",
+      "{0} reist heute ab — Checkout ausstehend.": "{0} is checking out today — checkout pending."
+    }
+  },
+  "v": 1
+}

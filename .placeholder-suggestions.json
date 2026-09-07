@@ -1,0 +1,44 @@
+{
+  "GaesteDialog.tsx": {
+    "vorname": "z. B. Erika",
+    "nachname": "z. B. Müller",
+    "email": "erika@example.com",
+    "telefon": "z. B. +49 30 123456",
+    "website": "z. B. www.example.com",
+    "plz": "z. B. 10115",
+    "ort": "z. B. Berlin",
+    "newsletter": "Ja, gerne",
+    "anmerkungen": "Besondere Wünsche, Allergien, Anliegen..."
+  },
+  "ZimmerDialog.tsx": {
+    "bezeichnung": "z. B. Seezimmer 1",
+    "kategorie": "Zimmertyp wählen",
+    "preis_pro_nacht": "z. B. 89,00",
+    "etage": "z. B. 2",
+    "balkon": "Ja"
+  },
+  "ZusatzleistungenDialog.tsx": {
+    "name": "z. B. Frühstücksbuffet",
+    "preis": "z. B. 12,50",
+    "aktiv": "Ja, verfügbar"
+  },
+  "BuchungenDialog.tsx": {
+    "gast": "Gast wählen",
+    "zimmer": "Zimmer auswählen",
+    "anreise": "Wann kommt der Gast?",
+    "abreise": "Wann reist der Gast ab?",
+    "status": "Status wählen",
+    "personen": "z. B. 2",
+    "begleitperson": "Begleitperson wählen (optional)",
+    "zusatzleistungen_buchung": "Zusatzleistungen hinzufügen",
+    "bemerkung": "Spezialwünsche, Allergien, Notizen..."
+  },
+  "RechnungenDialog.tsx": {
+    "buchung": "Buchung wählen",
+    "betrag": "z. B. 445,00",
+    "rechnungsdatum": "Wann wurde die Rechnung ausgestellt?",
+    "faellig_am": "Zahlungsfrist",
+    "zahlungsstatus": "Status wählen",
+    "zahlungseingang": "Wann wurde bezahlt?"
+  }
+}
