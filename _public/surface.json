@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "buchungsanfrage",
+      "component": "Buchungsanfrage",
+      "title": "Zimmer anfragen",
+      "endpoints": [
+        {
+          "entity": "zimmer",
+          "op": "list",
+          "fields": [
+            "bezeichnung",
+            "kategorie",
+            "preis_pro_nacht",
+            "balkon"
+          ],
+          "scope_description": "zeigt alle Zimmer"
+        },
+        {
+          "entity": "buchungen",
+          "op": "list",
+          "fields": [
+            "zimmer",
+            "anreise",
+            "abreise",
+            "status"
+          ],
+          "scope_description": "zeigt bestehende Buchungen zur Verfügbarkeitsberechnung"
+        },
+        {
+          "entity": "gaeste",
+          "op": "create",
+          "fields": [
+            "vorname",
+            "nachname",
+            "email",
+            "telefon"
+          ]
+        },
+        {
+          "entity": "buchungen",
+          "op": "create",
+          "fields": [
+            "gast",
+            "zimmer",
+            "anreise",
+            "abreise",
+            "personen",
+            "bemerkung"
+          ],
+          "preset_fields": {
+            "status": "angefragt"
+          }
+        }
+      ]
+    }
+  ]
+}
