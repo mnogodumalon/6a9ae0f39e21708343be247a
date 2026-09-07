@@ -1,0 +1,38 @@
+{
+  "pages": {
+    "en": {
+      " — Anfrage wartet auf Bestätigung.": " — Request awaiting confirmation.",
+      " — {0} Anfragen warten auf Bestätigung.": " — {0} requests awaiting confirmation.",
+      "Abreise heute": "Departing Today",
+      "Abreise: {0}.": "Departure: {0}.",
+      "Alle Rechnungen bezahlt.": "All invoices paid.",
+      "Als bezahlt markieren": "Mark as Paid",
+      "Anreise heute": "Arriving Today",
+      "Aufenthalt angepasst": "Stay Adjusted",
+      "Auschecken": "Check Out",
+      "Ausgecheckt": "Checked Out",
+      "Bestätigen": "Confirm",
+      "Buchung": "Booking",
+      "Buchung anlegen": "Create Booking",
+      "Buchung bestätigt": "Booking Confirmed",
+      "Buchung verschoben": "Booking Rescheduled",
+      "Einchecken": "Check In",
+      "Eingecheckt": "Checked In",
+      "Heute & bald": "Today & Soon",
+      "Heute Abreise": "Departing Today",
+      "Heute Anreise": "Arriving Today",
+      "Heute keine Ankünfte oder Abreisen.": "No arrivals or departures today.",
+      "Heute kommen {0}.": "{0} arriving today.",
+      "Keine Ankünfte oder Abreisen heute.": "No arrivals or departures today.",
+      "Neue Buchung": "New Booking",
+      "Offene Rechnungen": "Open Invoices",
+      "Rechnung": "Invoice",
+      "Rechnung erstellen": "Create Invoice",
+      "Unbekannter Gast": "Unknown Guest",
+      "Zimmer bereits belegt in diesem Zeitraum.": "Room already occupied during this period.",
+      "{0} Gäste sind aktuell eingecheckt.": "{0} guests are currently checked in.",
+      "Überfällig": "Overdue"
+    }
+  },
+  "v": 1
+}
