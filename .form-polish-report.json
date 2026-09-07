@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Gäste": {
+      "placeholders_set": 9,
+      "defaults_keys": ["newsletter"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten mit Kontaktinformationen und bool-Aktivität. Keine berechenbaren Felder, keine Applookup-Ketten, keine Produkte oder Summen."
+    },
+    "Zimmer": {
+      "placeholders_set": 5,
+      "defaults_keys": ["kategorie", "balkon"],
+      "computed_keys": [],
+      "reason": "Stammdaten mit Klassifikation und Pricing. Keine internen Berechnungen — Zimmerpreise sind Referenzen, die in Buchungen berechnet werden."
+    },
+    "Zusatzleistungen": {
+      "placeholders_set": 3,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Stammdaten mit Pricing-Feld als Lookup-Target. Keine eigenen Berechnungen — Preise werden in Buchungen multipliziert."
+    },
+    "Buchungen": {
+      "placeholders_set": 9,
+      "defaults_keys": ["anreise", "abreise", "status", "personen"],
+      "computed_keys": ["_buchung_dauer_nächte", "gesamtpreis"],
+      "reason": "Aufenthalts-Entity (HEURISTIK MATCH): Datumspaar (anreise/abreise) mit applookup(zimmer, tagespreis) und multipleapplookup(zusatzleistungen, preis). Dauer-Berechnung via dateDiff (virtuelle Anzeige unten); Gesamtkosten = Zimmer-Tagespreis × Nächte + Summe aller Zusatzleistungen-Preise (Modus 2, ctx.sumOver für Multilookup)."
+    },
+    "Rechnungen": {
+      "placeholders_set": 5,
+      "defaults_keys": ["rechnungsdatum", "faellig_am", "zahlungsstatus"],
+      "computed_keys": [],
+      "reason": "Post-Buchungs-Artefakte mit manuell eingegeben Betrag. Keine Brutto-Steuer-Signale (nur ein betrag-Feld, kein netto/mwst/steuer). Betrag ist Geschäftsentscheidung, nicht berechenbar. Zahlungsdatum-Defaults sind typische Fristen (14 Tage Standard-Zahlungsziel)."
+    }
+  }
+}

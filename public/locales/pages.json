@@ -1,0 +1,40 @@
+{
+  "pages": {
+    "en": {
+      ", bitte auschecken.": ", please check out.",
+      "Abreise heute": "Departing Today",
+      "Alle Anfragen bearbeitet.": "All requests handled.",
+      "Alle eingecheckt — reibungsloser Morgen!": "All checked in — smooth morning!",
+      "Anreise heute": "Arriving Today",
+      "Aufenthaltsdauer angepasst": "Stay duration adjusted",
+      "Auschecken": "Check Out",
+      "Belegt": "Occupied",
+      "Bestätigen": "Confirm",
+      "Buchung anlegen": "Create Booking",
+      "Einchecken": "Check In",
+      "Gast": "Guest",
+      "Gäste": "Guests",
+      "Heute ankommen": "Arriving Today",
+      "Heute reist ab: {0}.": "Departing today: {0}.",
+      "Heute reist an: {0}.": "Arriving today: {0}.",
+      "Kein Zimmer": "No Room",
+      "Keine Ankünfte heute.": "No arrivals today.",
+      "Keine Ankünfte oder Abreisen heute.": "No arrivals or departures today.",
+      "Keine offenen Anfragen.": "No open requests.",
+      "Neue Buchung": "New Booking",
+      "Offene Anfragen": "Open Requests",
+      "Offene Rechnungen": "Open Invoices",
+      "Personen": "Persons",
+      "Unbekannter Gast": "Unknown Guest",
+      "Zimmer belegt — {0} ist in diesem Zeitraum bereits eingebucht.": "Room occupied — {0} is already booked for this period.",
+      "{0} reist an — {1} reist ab.": "{0} arriving — {1} departing.",
+      "{0} {1} aktuell eingecheckt — ruhiger Tag.": "{0} {1} currently checked in — quiet day.",
+      "{0} — Buchung bestätigt": "{0} — Booking Confirmed",
+      "{0} — Buchung verschoben": "{0} — Booking Rescheduled",
+      "{0} — ausgecheckt": "{0} — Checked Out",
+      "{0} — eingecheckt": "{0} — Checked In",
+      "— Abreise war": "— Departure was"
+    }
+  },
+  "v": 1
+}
