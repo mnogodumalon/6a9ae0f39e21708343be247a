@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Gäste": {
+      "placeholders_set": 9,
+      "defaults_keys": ["newsletter"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kontaktinformationen), keine Numerik, keine berechenbaren Beziehungen"
+    },
+    "Zimmer": {
+      "placeholders_set": 5,
+      "defaults_keys": ["kategorie", "balkon"],
+      "computed_keys": [],
+      "reason": "Stammdaten-Entity mit Kategorisierung und Ausstattung. Preise werden in Buchungen verwendet, nicht hier berechnet"
+    },
+    "Zusatzleistungen": {
+      "placeholders_set": 3,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Stammdaten mit Aktivitäts-Flag. Preise werden in Buchungen als Summe über multipleapplookup aggregiert"
+    },
+    "Buchungen": {
+      "placeholders_set": 10,
+      "defaults_keys": ["anreise", "abreise", "personen", "status"],
+      "computed_keys": ["_aufenthalt_dauer_nächte", "_gesamtkosten"],
+      "reason": "Aufenthalts-Entity (Heuristik c): Datumspaar (anreise/abreise) + applookup-Preis (Zimmer) + multipleapplookup-Zusatzleistungen mit Preisen. Virtuelle Dauer-Berechnung (dateDiff) + Gesamtkosten-Aggregat (Nächte × Zimmerpreis + Summe Zusatzleistungen über ctx.sumOver)"
+    },
+    "Rechnungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["rechnungsdatum", "faellig_am", "zahlungsstatus"],
+      "computed_keys": [],
+      "reason": "Rechnungs-Stammdaten zu Buchungen. Betrag wird manuell eingegeben oder aus Buchungs-Historie importiert (nicht trivial genug für computed). Keine weiteren berechenbaren Größen"
+    }
+  }
+}

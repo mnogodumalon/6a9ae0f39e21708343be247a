@@ -1,0 +1,41 @@
+{
+  "pages": {
+    "en": {
+      "Abreise": "Departure",
+      "Alle Zimmer belegt.": "All rooms occupied.",
+      "Anfragen": "Inquiries",
+      "Angefragt": "Requested",
+      "Anreise": "Arrival",
+      "Aufenthalt angepasst": "Stay adjusted",
+      "Auschecken": "Check Out",
+      "Belegt": "Occupied",
+      "Bestätigen": "Confirm",
+      "Buchung anlegen": "Create Booking",
+      "Buchung verschoben": "Booking rescheduled",
+      "Einchecken": "Check In",
+      "Eine Rechnung": "One invoice",
+      "Eingecheckt": "Checked In",
+      "Frei": "Available",
+      "Fällig seit {0}, Betrag {1}.": "Due since {0}, amount {1}.",
+      "Heute aktiv": "Active today",
+      "Keine An- oder Abreisen heute.": "No arrivals or departures today.",
+      "Keine offenen Anfragen.": "No open inquiries.",
+      "Neue Buchung": "New Booking",
+      "Offene Anfragen": "Open Inquiries",
+      "Offene Rechnungen": "Open Invoices",
+      "Rechnung öffnen": "Open Invoice",
+      "Status auf {0} gesetzt": "Status set to {0}",
+      "Unbekannt": "Unknown",
+      "Unbekannter Gast": "Unknown Guest",
+      "Zimmer bereits belegt ({0})": "Room already occupied ({0})",
+      "Zimmer frei heute": "Rooms available today",
+      "Zimmer in diesem Zeitraum bereits belegt": "Room already occupied in this period",
+      "{0} Rechnungen": "{0} invoices",
+      "{0} Zimmer heute frei.": "{0} room(s) available today.",
+      "{0} checkt heute aus.": "{0} checks out today.",
+      "{0} reist heute an.": "{0} arrives today.",
+      "{0} überfällig": "{0} overdue"
+    }
+  },
+  "v": 1
+}
