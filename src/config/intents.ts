@@ -20,7 +20,7 @@
 import type { ComponentType } from 'react';
 
 // <custom:intent-imports>
-import { IconCalendarPlus, IconDoorEnter, IconFileInvoice } from '@tabler/icons-react';
+import { IconCalendarPlus, IconFileInvoice } from '@tabler/icons-react';
 // </custom:intent-imports>
 
 export interface IntentLink {
@@ -44,7 +44,6 @@ export interface IntentLink {
 export const INTENTS: IntentLink[] = [
   // <custom:intents>
   { path: '/intents/neue-buchung', label: { de: 'Neue Buchung', en: 'New booking' }, icon: IconCalendarPlus, description: 'Buchung in drei Schritten anlegen — Gast, Zimmer mit Verfügbarkeit, Zusatzleistungen' },
-  { path: '/intents/gast-einchecken', label: { de: 'Gast einchecken', en: 'Check in guest' }, icon: IconDoorEnter, description: 'Bestätigte Buchung suchen und Gast einchecken' },
   { path: '/intents/rechnung-erstellen', label: { de: 'Rechnung stellen', en: 'Create invoice' }, icon: IconFileInvoice, description: 'Zu einer Buchung eine Rechnung anlegen' },
   // </custom:intents>
 ];

@@ -4,15 +4,14 @@
     {
       "slug": "buchungsanfrage",
       "type": "custom",
-      "entity": "buchungen",
+      "entity": "gaeste",
       "title": "Zimmer anfragen",
       "published": true,
       "fields": [
-        "gast",
-        "anreise",
-        "abreise",
-        "personen",
-        "bemerkung"
+        "vorname",
+        "nachname",
+        "email",
+        "telefon"
       ]
     }
   ]

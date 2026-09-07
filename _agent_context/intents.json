@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "flows": [],
+  "unregistered_pages": [
+    {
+      "file": "src/pages/intents/GastEincheckenPage.tsx",
+      "summary": "/**\n * Gast einchecken — 2-Schritt-Wizard.\n * Steps: 1) Buchung suchen (nur bestätigte) → 2) Details prüfen → SummaryStep → Status auf 'eingecheckt' setzen.\n * Reads: buchungen (gefiltert auf status=bestaetigt), gaeste, zimmer, zusatzleistungen.\n * Writes: buchungen (updateBuchungenEntry — status: 'eingecheckt').\n * Composes: IntentWizardShell, EntitySelectStep, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "EntitySelectStep",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep"
+      ],
+      "writes": [
+        "updateBuchungenEntry"
+      ]
+    },
+    {
+      "file": "src/pages/intents/NeueBuchungPage.tsx",
+      "summary": "/**\n * Neue Buchung — 5-Schritt-Wizard.\n * Steps: 1) Gast wählen → 2) Zeitraum wählen → 3) Zimmer wählen → 4) Zusatzleistungen & Details → 5) Prüfen & anlegen.\n * Reads: buchungen (Belegung), zusatzleistungen. Writes: buchungen (createBuchungenEntry).\n * Composes: IntentWizardShell, WizardStep, EntitySelectStep, AvailabilityRangePicker,\n *           ChoiceGroup, Field, Bound, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "AvailabilityRangePicker",
+        "Bound",
+        "ChoiceGroup",
+        "EntitySelectStep",
+        "Field",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep",
+        "rangeIsFree"
+      ],
+      "writes": []
+    },
+    {
+      "file": "src/pages/intents/RechnungErstellenPage.tsx",
+      "summary": "/**\n * Rechnung erstellen — 3-Schritt-Wizard.\n * Steps: 1) Buchung auswählen → 2) Rechnungsdetails eingeben → 3) Prüfen & anlegen.\n * Reads: buchungen (gefiltert: bestaetigt|eingecheckt|ausgecheckt). Writes: rechnungen (createRechnungenEntry).\n * Composes: IntentWizardShell, EntitySelectStep, ChoiceGroup, StepNav, SummaryStep, SuccessStep.\n */",
+      "components": [
+        "ChoiceGroup",
+        "DatePicker",
+        "EntitySelectStep",
+        "Field",
+        "Input",
+        "IntentWizardShell",
+        "StepNav",
+        "SuccessStep",
+        "SummaryStep",
+        "WizardStep"
+      ],
+      "writes": []
+    }
+  ]
+}

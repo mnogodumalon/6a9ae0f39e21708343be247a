@@ -47,7 +47,7 @@ There is NO `@/config/appIds`, no `@/config/lookupOptions` and no
 createRecordUrl from the service. Note the lowercase `l` in the service path.
 
 - Gäste (gaeste): vorname!^[string/text], nachname!^[string/text], email^[string/email] "E-Mail", telefon^[string/tel], website^[string/url], plz[string/text], ort[string/text], newsletter[bool], anmerkungen[string/textarea]
-  ≡ 4 records at build time
+  ≡ 5 records at build time
   · website: An URL value according to RFC 3986 (or `null`/`None`).
   ⚙ getGaeste() · getGaesteEntry(id) · createGaesteEntry(fields) · updateGaesteEntry(id, fields) · deleteGaesteEntry(id) · queryGaeste({ filter, orderby, limit, offset, fields }) · countGaeste(filter?)
 - Zimmer (zimmer): bezeichnung!^[string/text], kategorie!^[lookup/radio: einzelzimmer|doppelzimmer|suite], preis_pro_nacht^[number], etage^[number], balkon^[bool], foto[file]
@@ -58,7 +58,7 @@ createRecordUrl from the service. Note the lowercase `l` in the service path.
   ≡ 3 records at build time
   ⚙ getZusatzleistungen() · getZusatzleistungenEntry(id) · createZusatzleistungenEntry(fields) · updateZusatzleistungenEntry(id, fields) · deleteZusatzleistungenEntry(id) · queryZusatzleistungen({ filter, orderby, limit, offset, fields }) · countZusatzleistungen(filter?)
 - Buchungen (buchungen): gast!^[applookup/select], zimmer!^[applookup/select], anreise!^[date/date], abreise!^[date/date], status!^[lookup/select: storniert|bestaetigt|angefragt|eingecheckt|ausgecheckt], personen[number], begleitperson[applookup/select], zusatzleistungen_buchung[multipleapplookup/select] "Zusatzleistungen", bemerkung[string/textarea], beleg[file]
-  ≡ 4 records at build time
+  ≡ 6 records at build time
   · zusatzleistungen_buchung: Arbitrary number of referenced LivingApp records from the target lookup app 'Zusatzleistungen' with the id `6a9ae0d579cbef571a2028f7`. The field value will b…
   ◈ anreise+abreise → range candidate — YOU decide in .intents-staging/occupancy.json whether it is a stay, which applookup is the booked resource, which status keys do not occupy (AvailabilityRangePicker, form.range; blocked = occupancyFor()) · status → choice (5 options, ChoiceGroup) · gast → record (gaeste, EntitySelectStep) · zimmer → record (zimmer, EntitySelectStep) · begleitperson → record (gaeste, EntitySelectStep) · zusatzleistungen_buchung → record (zusatzleistungen, EntitySelectStep)
   ⚙ getBuchungen() · getBuchungenEntry(id) · createBuchungenEntry(fields) · updateBuchungenEntry(id, fields) · deleteBuchungenEntry(id) · queryBuchungen({ filter, orderby, limit, offset, fields }) · countBuchungen(filter?)
