@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "buchungsanfrage",
+      "component": "Buchungsanfrage",
+      "title": "Zimmer anfragen",
+      "endpoints": [
+        {
+          "entity": "zimmer",
+          "op": "list",
+          "fields": [
+            "bezeichnung",
+            "kategorie",
+            "preis_pro_nacht",
+            "etage",
+            "balkon",
+            "foto"
+          ],
+          "scope_description": "zeigt alle Zimmer"
+        },
+        {
+          "entity": "buchungen",
+          "op": "list",
+          "fields": [
+            "zimmer",
+            "anreise",
+            "abreise",
+            "status"
+          ],
+          "scope": "r.v_status not in ['storniert', 'angefragt']",
+          "scope_description": "zeigt nur bestätigte und aktive Belegungen — stornierte und noch offene Anfragen gelten als frei"
+        },
+        {
+          "entity": "gaeste",
+          "op": "create",
+          "fields": [
+            "vorname",
+            "nachname",
+            "email",
+            "telefon"
+          ]
+        },
+        {
+          "entity": "buchungen",
+          "op": "create",
+          "fields": [
+            "zimmer",
+            "anreise",
+            "abreise",
+            "personen",
+            "bemerkung",
+            "gast"
+          ],
+          "preset_fields": {
+            "status": "angefragt"
+          }
+        }
+      ]
+    }
+  ]
+}
