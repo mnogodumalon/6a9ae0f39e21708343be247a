@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "buchungsanfrage",
+      "type": "custom",
+      "entity": "gaeste",
+      "title": "Zimmer anfragen",
+      "published": true,
+      "fields": [
+        "vorname",
+        "nachname",
+        "email",
+        "telefon"
+      ]
+    }
+  ]
+}

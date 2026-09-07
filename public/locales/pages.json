@@ -1,0 +1,42 @@
+{
+  "pages": {
+    "en": {
+      "Abreise": "Departure",
+      "Abreise heute": "Departures today",
+      "Als bezahlt markieren": "Mark as Paid",
+      "Anfragen": "Inquiries",
+      "Angefragt": "Requested",
+      "Anreise": "Arrival",
+      "Anreise heute": "Arrivals today",
+      "Auschecken": "Check Out",
+      "Bestätigen": "Confirm",
+      "Buchung": "Booking",
+      "Buchung anlegen": "Create Booking",
+      "Dieses Zimmer ist in diesem Zeitraum bereits belegt.": "This room is already occupied during this period.",
+      "Einchecken": "Check In",
+      "Eine Rechnung ist überfällig — fällig war {0}.": "An invoice is overdue — due date was {0}.",
+      "Freie Zimmer": "Vacant Rooms",
+      "Gast": "Guest",
+      "Gäste aktuell im Haus": "Guests currently in the house",
+      "Heute: Check-in & Check-out": "Today: Check-in & Check-out",
+      "Im Haus": "In House",
+      "Keine An- oder Abreisen heute": "No arrivals or departures today",
+      "Keine Gäste im Haus — perfekte Zeit zum Aufräumen!": "No guests in the house — perfect time to tidy up!",
+      "Keine offenen Anfragen": "No open inquiries",
+      "Neue Buchung": "New Booking",
+      "Offen. Rechnungen": "Open Invoices",
+      "Offene Anfragen": "Open Inquiries",
+      "Rechnung": "Invoice",
+      "Zeitraum angepasst": "Period adjusted",
+      "als bezahlt markiert": "marked as paid",
+      "ausgecheckt": "checked out",
+      "bestätigt": "confirmed",
+      "eingecheckt": "checked in",
+      "kommt heute an": "arriving today",
+      "reist heute ab": "departing today",
+      "verschoben": "rescheduled",
+      "{0} Rechnungen sind überfällig.": "{0} invoices are overdue."
+    }
+  },
+  "v": 1
+}

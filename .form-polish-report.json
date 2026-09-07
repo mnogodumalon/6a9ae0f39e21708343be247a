@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Gäste": {
+      "placeholders_set": 9,
+      "defaults_keys": ["newsletter"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten-Entity — Vor- und Nachname, Kontaktdaten, Adresse, Notizen. Kein Datums-Paar, keine Preis-Targets, keine berechenbaren Abhängigkeiten. Nur newsletter bool erhält Default true."
+    },
+    "Zimmer": {
+      "placeholders_set": 5,
+      "defaults_keys": ["kategorie", "balkon"],
+      "computed_keys": [],
+      "reason": "Stammdaten-Entity mit Kategorie-Lookup, Preis pro Nacht, Etage und Balkon-Flag. Kein Datums-Paar, keine berechenbaren Feldzusammenhänge — die preis_pro_nacht ist Quellfeld für andere Entities' applookup-Targets, nicht selbst zu berechnen."
+    },
+    "Zusatzleistungen": {
+      "placeholders_set": 3,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Stammdaten-Entity für optionale Zusatzleistungen (z. B. Frühstück, Parkplatz). Nur Name, Preis und Aktiv-Flag. Kein Datums-Paar, keine Multilookup, keine berechenbaren Abhängigkeiten."
+    },
+    "Buchungen": {
+      "placeholders_set": 9,
+      "defaults_keys": ["status", "personen", "anreise", "abreise"],
+      "computed_keys": ["_buchung_dauer_nächte", "_gesamtkosten"],
+      "reason": "Aufenthalts-Entity (Heuristik c) mit Datums-Paar anreise/abreise, applookup auf Zimmer mit preis_pro_nacht und Multiapplookup auf Zusatzleistungen mit preis-Feld. Pflicht: (a.2) virtueller Dauer-Key _buchung_dauer_nächte als dateDiff(anreise,abreise,days) für Aggregat-Hinweis; (c) Gesamtkosten _gesamtkosten = Zimmerpreis × Nächte + Summe Zusatzleistungen. Status defaultet auf 'angefragt' (erster Workflow-Status), Personen auf 1, Anreise auf heute, Abreise auf heute+3 (typische 3-Nächte-Buchung)."
+    },
+    "Rechnungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["rechnungsdatum", "faellig_am", "zahlungsstatus"],
+      "computed_keys": [],
+      "reason": "Abschluss-Entity mit applookup auf Buchung, manuell eingetragener Betrag, Rechnungs- und Fälligkeitsdatum. Der Betrag ist kein berechenbarer Posten (User trägt ihn ein — die Kalkulation erfolgt bei der Buchung). Rechnungsdatum default heute, Fälligkeitsdatum default heute+14 Tage (typische Zahlungsfrist), Zahlungsstatus default 'offen'. zahlungseingang erhält keinen Default — wird nur gesetzt, wenn tatsächlich bezahlt."
+    }
+  }
+}
