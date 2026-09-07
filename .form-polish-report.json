@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Gäste": {
+      "placeholders_set": 9,
+      "defaults_keys": ["newsletter"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kontaktinformationen), keine Numerikfelder mit Beziehungen, keine Datumsfelder. Newsletter als Bool mit sinnvollem False-Default."
+    },
+    "Zimmer": {
+      "placeholders_set": 5,
+      "defaults_keys": ["kategorie"],
+      "computed_keys": [],
+      "reason": "Tarif-Stammdaten (Preis, Kategorie, Etage, Balkon). Preis wird später als Multiplikator in Buchungen verwendet. Kategorie mit Einzelzimmer-Default (häufigste Auswahl)."
+    },
+    "Zusatzleistungen": {
+      "placeholders_set": 3,
+      "defaults_keys": ["aktiv"],
+      "computed_keys": [],
+      "reason": "Tarif-Lookup für Zusatzleistungen (Name, Preis, Aktiv-Flag). Keine Berechnung — Preis wird über multipleapplookup in Buchungen aggregiert."
+    },
+    "Buchungen": {
+      "placeholders_set": 9,
+      "defaults_keys": ["anreise", "abreise", "status", "personen"],
+      "computed_keys": ["_buchung_dauer_nächte", "gesamtkosten"],
+      "reason": "Kern-Aufenthalts-Entity. Dauer-Berechnung (anreise/abreise → Nächte als virtual Key für Aggregat-Anzeige). Gesamtkosten (MODUS 2): Zimmer-Tagespreis × Nächte + Summe Zusatzleistungen via ctx.sumOver. Status-Default 'angefragt', Abreise +3 Tage (typische 3-Nacht-Buchung)."
+    },
+    "Rechnungen": {
+      "placeholders_set": 6,
+      "defaults_keys": ["rechnungsdatum", "faellig_am", "zahlungsstatus"],
+      "computed_keys": [],
+      "reason": "Rechnungs-Entity mit manueller Betragseingabe (kein computed — Backend-Feld). Rechnungsdatum → heute, Fällig am → +14 Tage (std. Zahlungsfrist), Zahlungsstatus Default 'offen'."
+    }
+  }
+}
