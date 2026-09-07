@@ -1,0 +1,38 @@
+{
+  "pages": {
+    "en": {
+      "Abreise": "Departure",
+      "Abreisen heute": "Departures Today",
+      "Alle Rechnungen bezahlt — super!": "All Invoices Paid — Great!",
+      "Als bezahlt markieren": "Mark as Paid",
+      "Anreise": "Arrival",
+      "Anreisen heute": "Arrivals Today",
+      "Auschecken": "Check Out",
+      "Belegt": "Occupied",
+      "Belegt heute": "Occupied Today",
+      "Bestätigen": "Confirm",
+      "Bezahlt": "Paid",
+      "Buchung verschoben": "Booking Moved",
+      "Buchungsdauer geändert": "Booking Duration Changed",
+      "Einchecken": "Check In",
+      "Gast": "Guest",
+      "Heute keine Ankünfte oder Abreisen — ruhiger Tag!": "No Arrivals or Departures Today — Quiet Day!",
+      "Heute keine Ankünfte oder Abreisen.": "No Arrivals or Departures Today.",
+      "Heute kommen {0}.": "{0} Arriving Today.",
+      "Heute reisen {0} ab.": "{0} Departing Today.",
+      "Heute — Ankünfte & Abreisen": "Today — Arrivals & Departures",
+      "Neue Buchung": "New Booking",
+      "Neue Buchung anlegen": "Create New Booking",
+      "Offen": "Open",
+      "Offene Anfragen": "Open Requests",
+      "Offene Rechnungen": "Open Invoices",
+      "Rechnung als bezahlt markiert": "Invoice Marked as Paid",
+      "Zimmer ist in diesem Zeitraum bereits belegt": "Room is Already Occupied During This Period",
+      "warten auf Bestätigung ({0} Anfragen).": "Awaiting Confirmation ({0} Requests).",
+      "wartet auf Bestätigung — Anreise {0}.": "Awaiting Confirmation — Arrival {0}.",
+      "{0} Zimmer belegt — ruhiger Tag.": "{0} Rooms Occupied — Quiet Day.",
+      "{0} — Status aktualisiert": "{0} — Status Updated"
+    }
+  },
+  "v": 1
+}
