@@ -1,0 +1,37 @@
+{
+  "pages": {
+    "en": {
+      " muss heute noch ausgecheckt werden.": " still needs to check out today.",
+      " müssen heute noch ausgecheckt werden.": " still need to check out today.",
+      "Abreise": "Departure",
+      "Alle Rechnungen beglichen — sehr gut!": "All invoices settled — well done!",
+      "Als bezahlt markieren": "Mark as Paid",
+      "Anfragen": "Inquiries",
+      "Anreise": "Arrival",
+      "Anreisen heute": "Arrivals Today",
+      "Aufenthalt angepasst": "Stay Adjusted",
+      "Auschecken": "Check Out",
+      "Belegt heute": "Occupied Today",
+      "Bezahlt": "Paid",
+      "Buchung bestätigen": "Confirm Booking",
+      "Buchung verschoben": "Booking Rescheduled",
+      "Einchecken": "Check In",
+      "Eingecheckt": "Checked In",
+      "Gast": "Guest",
+      "Heute — An- & Abreisen": "Today — Arrivals & Departures",
+      "Keine An- oder Abreisen heute — nächste Buchung im Belegungsplan": "No arrivals or departures today — next booking in the occupancy plan",
+      "Keine An- oder Abreisen heute.": "No arrivals or departures today.",
+      "Neue Buchung": "New Booking",
+      "Neue Rechnung": "New Invoice",
+      "Offene Rechnungen": "Open Invoices",
+      "Rechnung als bezahlt markiert": "Invoice Marked as Paid",
+      "Status geändert": "Status Changed",
+      "Zimmer ist in diesem Zeitraum bereits belegt.": "Room is already occupied during this period.",
+      "fällig": "due",
+      "{0} Gäste sind aktuell eingecheckt.": "{0} guests are currently checked in.",
+      "{0} reist heute ab.": "{0} is departing today.",
+      "{0} reist heute an.": "{0} is arriving today."
+    }
+  },
+  "v": 1
+}
